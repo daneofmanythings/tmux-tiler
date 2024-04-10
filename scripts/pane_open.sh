@@ -5,7 +5,9 @@ CURRENT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 source "$CURRENT_DIR"/apply_layout.sh
 
 function open_pane() {
-  local num_panes=$(tmux list-panes | wc -l)
+  local num_panes
+  num_panes=$(tmux list-panes | wc -l)
+
   if [ "${num_panes}" -gt 1 ]; then
     tmux select-pane -t 'bottom-left' \; split-pane
   else
