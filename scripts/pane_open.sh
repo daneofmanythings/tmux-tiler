@@ -9,7 +9,8 @@ function open_pane() {
   if [ "${num_panes}" -gt 1 ]; then
     tmux select-pane -t 'bottom-left' \; split-pane
   else
-    tmux split-window -h -p 75  
+    tmux split-window -h
+    tmux select-pane -t 0
   fi
 
   apply_layout_created_pane $(("$num_panes" + 1))

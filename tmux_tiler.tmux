@@ -21,9 +21,14 @@ function set_close_key_bindings() {
   done
 }
 
+function set_default_options() {
+  tmux set-option -gq "$main_pain_size_option" "$default_main_pane_size"
+}
+
 function main() {
   set_open_key_bindings
   set_close_key_bindings
+  set_default_options
 }
 
 main
