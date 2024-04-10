@@ -9,7 +9,7 @@ function set_open_key_bindings() {
   local key_bindings=$(get_tmux_option "$open_pane_options" "$default_open_pane")
   local key
   for key in $key_bindings; do
-    tmux bind-key "$key" run-shell "$CURRENT_DIR/scripts/open_pane.sh"
+    tmux bind-key -n "$key" run-shell "$CURRENT_DIR/scripts/pane_open.sh"
   done
 }
 
@@ -17,7 +17,7 @@ function set_close_key_bindings() {
   local key_bindings=$(get_tmux_option "$close_pane_option" "$default_close_pane")
   local key
   for key in $key_bindings; do
-    tmux bind-key "$key" run-shell "$CURRENT_DIR/scripts/close_pane.sh"
+    tmux bind-key -n "$key" run-shell "$CURRENT_DIR/scripts/pane_close.sh"
   done
 }
 
