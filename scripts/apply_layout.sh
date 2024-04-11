@@ -29,10 +29,11 @@ function _second_window_created() {
   local window_width
   window_width=$(tmux display -p '#{window_width}')
 
-  local main_pane_height_compliment
-  main_pane_height_compliment=$(( 100 - "$(get_tmux_option "$main_pane_width_option" "$default_main_pane_width")"))
+  local main_pane_width_compliment
+  main_pane_width_compliment=$(( 100 - "$(get_tmux_option "$main_pane_width_option" "$default_main_pane_width")"))
+  echo "${main_pane_width_compliment}"
 
-  local new_sub_pane_height=$(( "$main_pane_height_compliment" * "$window_width" / 100 ))
+  local new_sub_pane_height=$(( "$main_pane_width_compliment" * "$window_width" / 100 ))
 
   tmux resize-pane -t 0 -x "${new_sub_pane_height}"
   tmux rotate-window -D
