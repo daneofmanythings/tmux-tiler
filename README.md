@@ -44,7 +44,7 @@ and one option that controls the default width of the main pane:
 Make sure you've get [tpm](https://github.com/tmux-plugins/tpm) installed.
 Add this line to your tmux config file:
 ```
-set -g @plugin 'https://github.com/daneofmanythings/tmux_tiler.git'
+set -g @plugin 'daneofmanythings/tmux-tiler'
 ```
 
 Then, reload your config with

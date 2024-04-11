@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 
-# helper functions
 get_tmux_option() {
 	local option="$1"
 	local default_value="$2"

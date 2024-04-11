@@ -29,7 +29,7 @@ function set_default_options() {
   tmux set-option -gq "$main_pain_width_option" "$default_main_pane_width"
 }
 
-function main() {
+main() {
   set_open_key_bindings
   set_close_key_bindings
   set_default_options
