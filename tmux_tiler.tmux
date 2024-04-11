@@ -7,7 +7,7 @@ source "$CURRENT_DIR/scripts/helpers.sh"
 
 function set_open_key_bindings() {
   local key_bindings
-  key_bindings=$(get_tmux_option "$open_pane_options" "$default_open_pane")
+  key_bindings=$(get_tmux_option "$open_pane_option" "$default_open_pane")
 
   local key
   for key in $key_bindings; do
@@ -26,7 +26,7 @@ function set_close_key_bindings() {
 }
 
 function set_default_options() {
-  tmux set-option -gq "$main_pain_size_option" "$default_main_pane_size"
+  tmux set-option -gq "$main_pain_width_option" "$default_main_pane_width"
 }
 
 function main() {
