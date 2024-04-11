@@ -62,7 +62,7 @@ Use the pane open and close commands as normal and enjoy the dynamic tiling!
 
 ## Shoutouts
 
-[tmux-plugins](https://github.com/tmux-plugins): Excellent plugin manager and beautiful code. This project's structure is based on thier repositories.
+[tmux-plugins](https://github.com/tmux-plugins): Excellent plugin manager and beautiful code. This project is based on their repositories.
 
 ## License
 
