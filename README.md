@@ -59,6 +59,11 @@ and install with `<prefix>I` (the default tpm hotkey)
 
 Use the pane open and close commands as normal and enjoy the dynamic tiling!
 
+
+## Shoutouts
+
+[tmux-plugins](https://github.com/tmux-plugins): Thier plugin manager streamlines the plugin process, and the bash code is beautiful 
+
 ## License
 
 This project is licensed under the MiT license
