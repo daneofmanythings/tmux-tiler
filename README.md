@@ -29,7 +29,7 @@ This plugin emulates a dynamic tiling window manager with the following format:
 |    .     |                         |
 |    .     |                         | 
 
-(The panes on the left auto scale height to be even)
+(The panes on the left auto scale to equal height)
 ```
 
 It addss two commands:
@@ -62,7 +62,7 @@ Use the pane open and close commands as normal and enjoy the dynamic tiling!
 
 ## Shoutouts
 
-[tmux-plugins](https://github.com/tmux-plugins): Thier plugin manager streamlines the plugin process, and the bash code is beautiful 
+[tmux-plugins](https://github.com/tmux-plugins): Excellent plugin manager and beautiful code. This project's structure is based on thier repositories.
 
 ## License
 
