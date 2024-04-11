@@ -14,7 +14,7 @@ function close_pane() {
   current_pane=$(tmux display-message -p '#{pane_index}')
 
   if [ "${current_pane}" == "${main_pane_index}" ] && [ "${num_panes}" -gt 2 ]; then
-    tmux rotate-window -D
+    tmux rotate-window -U
     current_pane=$(( "$current_pane" - 1 ))
   fi
 

@@ -31,7 +31,7 @@ function _second_window_created() {
 
   local main_pane_width_compliment
   main_pane_width_compliment=$(( 100 - "$(get_tmux_option "$main_pane_width_option" "$default_main_pane_width")"))
-  echo "${main_pane_width_compliment}"
+  # echo "${main_pane_width_compliment}"
 
   local new_sub_pane_height=$(( "$main_pane_width_compliment" * "$window_width" / 100 ))
 
