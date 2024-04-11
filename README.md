@@ -4,7 +4,7 @@
 
 ## Summary
 
-enabling left stacking dynamic tyling for tmux
+enabling left stacking dynamic tiling for tmux
 
 </div>
 
